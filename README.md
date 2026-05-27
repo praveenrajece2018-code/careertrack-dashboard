@@ -121,28 +121,28 @@ applications
 
 | Column | Description |
 |---|---|
-| id | Primary key |
-| company_name | Company name |
-| location | Company location |
-| website | Company website |
-| created_at | Created timestamp |
+| `id` | Primary key |
+| `company_name` | Company name |
+| `location` | Company location |
+| `website` | Company website |
+| `created_at` | Created timestamp |
 
 ### applications table
 
 | Column | Description |
 |---|---|
-| id | Primary key |
-| company_id | Foreign key connected to companies |
-| role_title | Job role title |
-| job_type | Internship, Working Student, Full-time, etc. |
-| status | Saved, Applied, Interview, Assessment, Offer, Rejected |
-| applied_date | Date of application |
-| deadline | Application deadline |
-| interview_date | Interview date |
-| job_link | Job posting link |
-| notes | Application notes |
-| created_at | Created timestamp |
-| updated_at | Updated timestamp |
+| `id` | Primary key |
+| `company_id` | Foreign key connected to companies |
+| `role_title` | Job role title |
+| `job_type` | Internship, Working Student, Full-time, etc. |
+| `status` | Saved, Applied, Interview, Assessment, Offer, Rejected |
+| `applied_date` | Date of application |
+| `deadline` | Application deadline |
+| `interview_date` | Interview date |
+| `job_link` | Job posting link |
+| `notes` | Application notes |
+| `created_at` | Created timestamp |
+| `updated_at` | Updated timestamp |
 
 The `applications` table is connected to the `companies` table using a foreign key:
 
@@ -160,28 +160,28 @@ This means that if a company is deleted, related applications remain in the syst
 
 | Method | Endpoint | Description |
 |---|---|---|
-| GET | `/api/companies` | Get all companies |
-| GET | `/api/companies/:id` | Get one company by ID |
-| POST | `/api/companies` | Create a new company |
-| PUT | `/api/companies/:id` | Update an existing company |
-| DELETE | `/api/companies/:id` | Delete a company |
+| `GET` | `/api/companies` | Get all companies |
+| `GET` | `/api/companies/:id` | Get one company by ID |
+| `POST` | `/api/companies` | Create a new company |
+| `PUT` | `/api/companies/:id` | Update an existing company |
+| `DELETE` | `/api/companies/:id` | Delete a company |
 
 ### Applications
 
 | Method | Endpoint | Description |
 |---|---|---|
-| GET | `/api/applications` | Get all applications |
-| GET | `/api/applications?status=Applied` | Filter applications by status |
-| GET | `/api/applications/:id` | Get one application by ID |
-| POST | `/api/applications` | Create a new application |
-| PUT | `/api/applications/:id` | Update an existing application |
-| DELETE | `/api/applications/:id` | Delete an application |
+| `GET` | `/api/applications` | Get all applications |
+| `GET` | `/api/applications?status=Applied` | Filter applications by status |
+| `GET` | `/api/applications/:id` | Get one application by ID |
+| `POST` | `/api/applications` | Create a new application |
+| `PUT` | `/api/applications/:id` | Update an existing application |
+| `DELETE` | `/api/applications/:id` | Delete an application |
 
 ### Dashboard
 
 | Method | Endpoint | Description |
 |---|---|---|
-| GET | `/api/dashboard/stats` | Get dashboard statistics |
+| `GET` | `/api/dashboard/stats` | Get dashboard statistics |
 
 ---
 
