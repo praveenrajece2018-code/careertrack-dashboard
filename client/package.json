@@ -1,0 +1,40 @@
+{
+  "name": "jobnest",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@nuxt/eslint": "^1.14.0",
+    "@nuxt/fonts": "^0.13.0",
+    "@nuxt/icon": "^2.2.1",
+    "@nuxt/image": "^2.0.0",
+    "@nuxtjs/robots": "^5.7.0",
+    "@nuxtjs/sitemap": "^7.2.10",
+    "@nuxtjs/supabase": "^2.0.3",
+    "@tailwindcss/vite": "^4.1.18",
+    "@vueuse/nuxt": "^14.2.0",
+    "axios": "^1.16.1",
+    "daisyui": "^5.5.18",
+    "eslint": "^9.39.2",
+    "marked": "^17.0.1",
+    "nuxt": "^4.3.1",
+    "nuxt-toastify": "^1.1.0",
+    "tailwindcss": "^4.1.18",
+    "vue": "^3.5.28",
+    "vue-router": "^5.0.2"
+  },
+  "devDependencies": {
+    "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/ph": "^1.2.2",
+    "@tailwindcss/typography": "^0.5.19",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2"
+  }
+}
